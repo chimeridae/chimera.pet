@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+<html>
+<!-- What are you doing? Looking for secrets? Don't put your nose where it doesn't belong. Or you might learn something you DON'T like! Hee hee hee... Just kidding.
+
+       _     _                                       _     _ 
+   ___| |__ (_)_ __ ___   ___ _ __ __ _   _ __   ___| |_  | |
+  / __| '_ \| | '_ ` _ \ / _ \ '__/ _` | | '_ \ / _ \ __| | |
+ | (__| | | | | | | | | |  __/ | | (_| |_| |_) |  __/ |_  |_|
+  \___|_| |_|_|_| |_| |_|\___|_|  \__,_(_) .__/ \___|\__| (_)
+                                         |_|                  
+
+--> <!-- -=[ dog on computer ]=- tweak 8/00 - https://www.oocities.org/spunk1111/computer.htm
+
+                _,=.=,_
+              ,'=.     `\___,
+             /    \  (0     |        __ _
+            /      \     ___/       /| | ''--.._
+            |      |     \)         || |    ===|\
+            ',   _/    .--'         || |   ====| |
+              `"`;    (             || |    ===|/
+                 [[[[]]_..,_        \|_|_..--;"`
+                 /  .--""``\\          __)__|_
+               .'       .\,,||___     |        |
+         (   .'     -""`| `"";___)---'|________|__
+         |\ /         __|   [_____________________]
+          \|       .-'  `\        |.----------.|
+           \  _           |       ||          ||
+       jgs  (          .-' )      ||          ||
+             `""""""""""""`      """         """
+
+This site's general layout was originally created using sadgrl.online's layout creator,
+and mish-mashed until it became something else. my site is truly a chimera of many different things!
+i'll try to credit my sources as much as i can throughout this file, but i'm not perfect.
+
+feel free to take a look around and see how things work.
+inspiration is cool, but try to change the code up a bit, okay? thanks~ -->
+
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>animal's den</title>
+
+<!-- opengraph -->
+
+<meta name="description" content="chimera's site.
+˗ˏˋ 🐺🌲🐉 ´ˎ˗ ｡･:*˚:✧｡:･ — – -">
+<meta name="keywords" content="personal site">
+<meta name="author" content="chimera">
+<meta property="og:url" content="https://chimera.pet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="the animal's den">
+<meta property="og:description" content="chimera's site.
+˗ˏˋ 🐺🌲🐉 ´ˎ˗ ｡･:*˚:✧｡:･ — – -">
+<meta property="og:image" content="bow/bow.png">
+<meta property="og:image:width" content="50px">
+<meta property="og:image:secure_url" content="https://chimera.pet/bow.png">
+<meta name="twitter:image" content="bow/bow.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="the animal's den">
+<meta name="twitter:description" content="chimera's site.
+˗ˏˋ 🐺🌲🐉 ´ˎ˗ ｡･:*˚:✧｡:･ — – -">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" type="image/png" href="/favicon.png">
+
+<!-- jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- css -->
+
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all">
+<link href="chimera.css" rel="stylesheet" type="text/css" media="all">
+
+<!-- link sfx -->
+<script type='text/javascript' src='css-audio.js'></script>
+  <script type='text/javascript'>
+    window.addEventListener('load', function() { KTK.CSSA.init(); })
+</script>
+<script language="javascript">
+	$(document).ready(function() {
+		//http://pastebin.com/MfXqH7g3
+	// hp bar turns grayscale as it gets lower!
+	// required:
+	var barWidth = 160; // put your bar width here (in pixels)
+	var hpBarName = "#mood"; // hp bar inner section name. probably "hp" but change this if it isn't.
+	var mpBarName = "#energy"; // mp bar inner section name. probably "mp" but change this if it isn't.
+							// make sure you don't remove the hashtag!
+	// options:
+	var firstCutOff = 60; // upper grayscale limit. if this were pokemon, the bar goes yellow below here (in %)
+	var secondCutOff = 30; // lower grayscale limit. if this were pokemon, the bar goes red below here (in %)
+	var firstAmount = "hue-rotate(-30deg)"; // change 70% to however much you want to grey out the bar in stage one
+	var secondAmount = "hue-rotate(-75deg)"; // change 95% to however much you want to grey out the bar in stage two
+	 
+	if (Math.round($(hpBarName).css("width").replace("px","")/barWidth*100) <= firstCutOff) {
+			$(hpBarName).css({
+				 "filter": firstAmount,
+			 "-webkit-filter": firstAmount,
+			 "-moz-filter":    firstAmount,
+			 "-ms-filter":     firstAmount,
+			 "-o-filter":      firstAmount
+			});
+	}
+	   
+	if (Math.round($(hpBarName).css("width").replace("px","")/barWidth*100) <= secondCutOff) {
+			$(hpBarName).css({
+				 "filter": secondAmount,
+			 "-webkit-filter": secondAmount,
+			 "-moz-filter":    secondAmount,
+			 "-ms-filter":     secondAmount,
+			 "-o-filter":      secondAmount
+			});
+	}
+		
+	if (Math.round($(mpBarName).css("width").replace("px","")/barWidth*100) <= firstCutOff) {
+			$(mpBarName).css({
+				 "filter": firstAmount,
+			 "-webkit-filter": firstAmount,
+			 "-moz-filter":    firstAmount,
+			 "-ms-filter":     firstAmount,
+			 "-o-filter":      firstAmount
+			});
+	}
+	   
+	if (Math.round($(mpBarName).css("width").replace("px","")/barWidth*100) <= secondCutOff) {
+			$(mpBarName).css({
+				 "filter": secondAmount,
+			 "-webkit-filter": secondAmount,
+			 "-moz-filter":    secondAmount,
+			 "-ms-filter":     secondAmount,
+			 "-o-filter":      secondAmount
+			});
+	}
+		
+		
+	$('a#clickbutton').click(function() {
+		$('.t',this).toggle();
+	});
+	 
+	$("#cstm").css({"opacity": "0"})
+	$("#clickbutton").toggle(
+	function () {
+	$("#cstm").animate({"opacity": "1"}, "slow");
+	},
+	function () {
+	$("#cstm").animate({"opacity": "0"}, "slow");
+	});
+	});
+	</script>
+<style>
+	#navlink a {
+    --audio-src: url('https://file.garden/ZgSP2Yo9YF7Ec9o7/0224%20-%20Close%20Prelimenary%20Menu.mp3');  
+    }
+	a:active {
+	  --audio-state: playing;
+	  --audio-hold-navigation: finished;
+	}
+
+    .dropdown-content a {
+        --audio-src: url('https://file.garden/ZgSP2Yo9YF7Ec9o7/0224%20-%20Close%20Prelimenary%20Menu.mp3');  
+        }
+        a:active {
+          --audio-state: playing;
+          --audio-hold-navigation: finished;
+        }
+@media only screen and (max-width: 800px) {
+	.row {
+		flex-direction: column;
+	}
+}
+
+</style>
+
+</head>
+
+
+<body> 
+<div id="header"><a href="/home"><div class="titlefont"><div id="ticker"></div></div></a></div>   
+
+
+<div id="navigation"></div>
+
+<div id="container" class="window active">
+	<div class="title-bar" id="status">
+		<div class="status">
+			<div id="statuscafe" align="center">
+				<img src="furretright.gif" alt="Furret">
+					<div id="statuscafe-username"></div>
+					<img src="007r.gif" alt="Pichu">
+					<div style="display:inline-block" id="statuscafe-content"></div><script src="status.js" defer></script>
+			</div>
+		</div>
+		<div class="title-bar-controls">
+			<button aria-label="Minimize"></button>
+			<button aria-label="Maximize" disabled></button>
+			<button aria-label="Close"></button>
+		</div>
+	</div>
+
+<div id="flex">
+
+
+<aside id="leftSidebar">   
+<div class="childrow" style="display:flex;flex-basis:50%">            
+<div class="child" align="center">
+		<h2>stats</h2>
+		<div id="boxtest" class="stats">
+				<p id="created"><img src="loading.gif" alt="Loading stats..." class="motion"><span style="color:white" class="reducedmotion">Loading stats... (If this doesn't go away, I may have hit the API rate limit - come back later)</p>
+				<p id="updated"></p>
+				<p id="visitors"></p>
+				<p id="followers"></p>
+				<p id="source"><em>created by:</em> max.nekoweb.org</p>
+		</div>
+			<img alt="I can't believe we still let the humans be in charge" src="incharge.gif" class="banner">
+
+<p><iframe title="Follow me on Nekoweb" src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe></p>
+			
+	<p style="margin:0"><img alt="White dragons divider" id="darkglow" src="whitedragons.gif" class="motion" style="max-width:170px"><img alt="White dragons divider" id="darkglow" src="whitedragons.png" class="reducedmotion" style="max-width:170px"></p>
+</div>
+	<div class="child"  align="center">	
+			<div align="center"><h2>to do</h2></div>
+			<div class="todo">
+			<p class="high">create a detailed credits page</p>
+			<p class="high">finish converting new layout sitewide</p>
+			<p class="high">learn 11ty for easier sitebuilding</p>
+			<p class="med">add comments to the main page</p>
+			<p class="med">reformat sites/resources page</p>
+			<p class="med">reformat journal page</p>
+			<p class="med">make new themes for a styleswitcher revamp</p>
+			<p class="med">find or create new things to add to the sides of the index</p>
+			<p class="low">write up a page on dungeon meshi (i put this here before it got an anime and i still havent TwT)</p>
+			<p class="low">talk about and continue work on dandelion hill</p>
+			<p class="low">finish digimon "where to start" guide</p>
+			<p class="low">make some fun quizzes, or games to learn js!</p>
+		</div>
+			<img src="weasels.gif" alt="This site now with MORE weasels!" class="banner">
+			<p align="center" class="priority" style="font-size:smaller;margin:5px;">'priority' key:<br><strong class="high">high</strong>, <strong class="med">medium</strong>, <strong class="low">low</strong> </p>
+
+			
+
+</div>
+</div>			
+</aside>
+
+				
+                <main style="border-right: none; border-left: none; scrollbar-width: thin">
+                    <h1 class="welcome" id="glow" >welcome to the animals<span class="punctuation">'</span> den <span class="punctuation">...</span> <img alt="Pixel cerberus" src="cerberus.gif"></h1>
+                    <p style="margin-top:0">
+					<div class="squeeze" id="glow" align="left" style="margin-right:10px;float:left">
+					
+					<script language="JavaScript">
+					function random_imglink(){
+					var icons=new Array()
+					//specify random images below. You can have as many as you wish
+					icons[1]="icons/1.png"
+					icons[2]="icons/2.png"
+					icons[3]="icons/3.png"
+					icons[4]="icons/4.png"
+					icons[5]="icons/5.png"
+					icons[6]="icons/6.png"
+					icons[7]="icons/7.png"
+					icons[8]="icons/8.png"
+					icons[9]="icons/9.png"
+					icons[10]="icons/10.png"
+					icons[11]="icons/11.png"
+					icons[12]="icons/12.png"
+					icons[13]="icons/13.png"
+					icons[14]="icons/14.png"
+					icons[15]="icons/15.png"
+					icons[16]="icons/16.png"
+					icons[17]="icons/17.png"
+					icons[18]="icons/18.png"
+					icons[19]="icons/19.png"
+					icons[20]="icons/20.png"
+					icons[21]="icons/21.png"
+					icons[22]="icons/22.png"
+					icons[23]="icons/23.png"
+					icons[24]="icons/24.png"
+					icons[25]="icons/25.png"
+					icons[26]="icons/26.png"
+					icons[27]="icons/27.png"
+					icons[28]="icons/28.png"
+					icons[29]="icons/29.png"
+					icons[30]="icons/30.png" 
+					 
+					var ry=Math.floor(Math.random()*icons.length)
+					if (ry==0)
+					ry=1
+					document.write('<img src="'+icons[ry]+'" border="3px solid black" alt="A random Pokemon Mystery Dungeon icon">')
+					}
+					random_imglink()
+					//-->
+					</script>
+					
+					</div>
+					
+					<p style="margin:0">you've stumbled into the homepage of a <strong>CHIMERA!</strong> <img alt="Puppy pixel" src="yap.gif"> i'm a collection of animals who live on the web. you know this is my digital nest you've wandered into just now, right? if you'd like to - feel free to look around, stay for a little while and rest your paws. <img alt="Bow smiling" src="bowhappy.png" width="18px"> <img alt="Stardew valley happy emote" src="stardew.gif" width="18px"></p>
+
+					<p>this website doubles as a place of artistic expression, a place to dump my thoughts, and a place to collect all of my favorite things like a dragon. it's meant to be viewed on a computer, ideally with a resolution of 1920 x 1080 - though efforts are ongoing for mobile optimization.</p>
+
+					<p>just for fun, this site has two little mascots that run things behind the scenes. they represent both me as collective faceclaims, and individual sections of this website. click their names to learn more!<a title="for now this links to their toyhouse pages, but i aim to make individual pages on the site for them both in the future.">*</a></p>
+
+					<div class="row">
+						<div class="column" style="flex-basis:60%">
+							<img id="critter" src="bwcritter.gif" style="margin-left:10px" align="right">
+							<div class="critter">
+								<h3 style="color:#b8ff26; margin:5px" align="center"><a href="https://toyhou.se/27254595.critter" target="_blank">Critter</a></h3>
+								<p align="center" style="margin:0">Primary site mascot</p>
+								<p align="center">A virtual pet-like chimera who runs the website, hoarding it's files and using them as it's nest.</p>
+							</div>
+						</div>
+						<div class="column">
+							<img src="bwcirrus.gif" style="margin-left:10px" align="right">
+							<div class="cirrus">
+							<h3 style="color:#81b9ef;margin:5px" align="center"><a href="https://toyhou.se/15587957.cirrus" target="_blank">Cirrus</a></h3>
+							<p align="center" style="margin:0">Secondary site mascot</p>
+							<p align="center">A result of accidental fusion of unstable DNA between a Dragonite and a Togetic.</p>
+						</div>
+						</div>
+					</div>
+
+					<img src="flowerdiv.gif">
+
+					<h1 class="welcomesmall" id="glow">help a dog out<span class="punctuation">! <img style="width:40px;position: relative;top: 7px;" src="critterpixel.gif" alt="Winking pixel of a Dog Dragon Chimera named Critter, the site's mascot"></span></h1>
+					
+
+						<p align="center">enjoy what you see?
+							you can personally help keep this site afloat and get a cool picture by commissioning me over on <a style="color:#b8ff26;filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);" href="https://vgen.co/chimera" target="_top">vgen,</a> or leaving a tip on <a style="color:white;filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);" href="https://ko-fi.com/chimeral" target="_top">ko<span style="color:#ff5b5d;">-</span>fi!</a> it really helps, and i appreciate any support greatly. you can also support me by sharing the link or button to my website (feel free to let me know on my guestbook).</p>
+
+							
+
+						<p align="center">thank you so, so for checking out my website!</p>
+
+					<p align="center"><img src="chimerapet.gif" alt="Chimera's den!" title="Chimera's den!">
+						<textarea label="Chimera.pet button code" style="scrollbar-width: thin; width: 88px; height: 31px; position: relative; top: -3px;" readonly="true"><a href="https://chimera.pet/" title="Chimera's den!"><img src="https://chimera.pet/chimerapet.gif"></a></textarea> </p>
+					<p align="center" style="font-size:smaller;margin:4px">want to link out? feel free to hotlink!</p>	
+
+				<div align="center"><p><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#59a135', 'V7V694TRC');kofiwidget2.draw();</script></p></div>
+					
+					
+					<div align="center"><img alt="Green dragon divider" class="motion" src="cooldragons.gif"></div>
+					<div align="center"><img alt="Green dragon divider" class="reducedmotion" src="cooldragons.png"></div>
+
+<!-- Temporarily disabling the styleswitcher while I redo my amateur CSS from a year ago... !-->
+
+
+
+
+					<div class="row">
+						<div class="column">
+						<div align="center"><h1 style="margin-top:0"><img alt="Pichu running" src="pichu2.gif" class="motion"><img alt="Pichu running" src="pichu2.png" class="reducedmotion"> changelog</h1></div>
+						<div class="box">
+					<p><strong>9/12/24:</strong> added basic site mascot intros to the front page, and how to help out</p>
+					<p><strong>5/26/24:</strong> gradually been adding mobile optimization and accessibility features nearly-sitewide: added reduced-motion static pngs and slowly adding alt text</p>
+					<p class="happy2"><strong>5/3/24:</strong> slowly began to rollout <b>animal's den 3.0 🐾,</b> which revamped the site layout site-wide and includes (hopefully) decent mobile responsiveness!</a>
+					<p><strong>4/20/24:</strong> comments are now possible on journal entries</a>
+					<p><strong>4/10/24:</strong> added soul silver hub page - reworked pokemon css</a>
+					<p><strong>4/05/24:</strong> added pokemon guidebooks</a>
+					<p><strong>4/01/24:</strong> <a style="text-decoration:none" href="/fools/" target="_parent">april fools!</a>
+					<p><strong>3/25/24:</strong> finished the sitemap
+					<p><strong>3/20/24:</strong> changed web hosts from neocities to nekoweb, incurring lots of small changes around the site
+					<p><strong style="color:gray">3/19/24:</strong> transformed pokemon hub</p>
+					<p><strong>10/8/23:</strong> updated fennekin and flareon collections</p>
+					<p><strong>10/5/23:</strong> added a styleswitcher</p>	
+					<p><strong>10/4/23:</strong> totally new index page! animal's den 2.0 🐾
+					<p><strong>9/24/23:</strong> updated about... mind the gap!</p>
+					<p><strong style="color: mediumpurple">5/17/23:</strong> uploaded some digimon scans and an AMV</p>
+					<p><strong>5/2/23:</strong> added an undertale hub (finally)</p>
+					<p><strong style="color: mediumpurple">4/29/23:</strong> added a digimon hub and a few pages to it</p>
+					<p><strong>3/23/23:</strong> made a sitemap, including future site plans</p>
+					<p><strong>3/9/23:</strong> more journal, made site wider, misc edits</p>
+					<p><strong style="color:hotpink">3/2/23:</strong> made a journal to bitch in</p>
+					<p><strong>2/18/23:</strong> added flareon's collection page</p>
+					<p><strong>2/17/23:</strong> fixed iframes some more, added status to the homepage, and started on the cassettes collection!</p>
+					<p><strong>2/15/23:</strong> figured out iframes (thank god), added an "about" page, and a small update to my fennekin collection
+					<p><strong>2/13/23:</strong> added pokemon + fennekin collection pages!</p>
+                    <p style="border: none"><strong>2/12/23:</strong> main site layout established <img alt="Stardew valley happy emote" src="stardew.gif" style="margin:0">now for the content!</p>
+						
+						</div>
+
+					</div>
+						
+<div class="column">
+
+<div align="center" class="yt"><h1 style="margin-top:0">today's video <img alt="Pichu running" src="pichu1.gif" class="motion"><img alt="Pichu running" src="pichu1.png" class="reducedmotion"></h1>
+<div class="window">
+	<div class="title-bar">
+		<div class="title-bar-text">
+			<i>(Don't expect this to *actually* update daily...)</i>
+		</div>
+		<div class="title-bar-controls">
+		  <button aria-label="Close"></button>
+		</div>
+	  </div>
+<div class="window-body">
+
+
+	
+
+<iframe
+title="Daily video"
+class="youtube"
+id="youtube"
+src="https://www.youtube.com/embed/Y8Wp3dafaMQ"
+srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/y8qj0ooMkOk><span>▶</span></a>"
+frameborder="0"
+allowfullscreen
+></iframe>
+
+
+</div>
+</div>
+<details>
+
+<summary>
+	<img alt="Black arrow" src="blackarrow.gif"> thoughts</summary>
+		<div id="tooltip"><div id="thoughts"></div></div></details>
+					<img alt="Two puppies watch a butterfly" src="0.gif" style="margin: 0px;">
+						</div>
+					</div>
+</div>
+
+<div align="center"><img alt="Flowers divider" src="flowerdiv.gif"></div>
+
+<div class="row">
+	<div class="column">
+		
+<details>
+<summary><h1 style="font-size: 20px; margin: 0" align="center"><img alt="Black arrow" src="blackarrow.gif"> page resource credits</h1></summary>
+<p>i try to source whatever i can, and i'll try my best to keep this updated.</p>
+<div class="row">
+	<div class="column">
+		<strong>PMD icons</strong>: <a href="https://sprites.pmdcollab.org/" target="_top">PMDcollab.org</a><br>
+		<strong>Dragon dividers</strong>: <a href="https://quazar.neocities.org/freestuff" target="_top">Quazar</a><br>
+		<strong>Windows 7 styling</strong>: <a href="https://khang-nd.github.io/7.css/" target="_top">7.css</a><br>
+		<strong>"Reclaim the Web!" button</strong>: <a href="https:aioi.neocities.org/" target="_top">Aioi</a><br>
+	</div>
+	<div class="column">
+		<strong>8-bit bullets</strong>: <a href="https://www.deviantart.com/8-bitspider/gallery/all" target="_top">8-bitspider @ DeviantArt</a><br>
+		<strong>Pokemon pixels, hit counter, dividers</strong>: <a href="https://web.arcShive.org/web/20020205062534/http://pokemon.comike.to/eng/" target="_top">MewHeart and other 90's geocities</a><br>
+		<strong>TV header:</strong> <a href="https://unsplash.com/photos/crt-television-on-grass-field-HaHmfQ7SioM" target="_top">Unsplash</a>
+	</div></div>
+</details>
+		<div align="center">
+			
+			</div>
+                </main>
+
+				<aside id="rightSidebar">
+                <div class="childrow" style="display:flex;flex-basis:50%">
+					<div class="child" align="center">
+						<!-- FC2 Counter  Starts here -->
+						<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39587087&main=1"></script><noscript><img alt="Pokemon-themed website counter" src="//counter1.fc2.com/counter_img.php?id=39587087&main=1" /></noscript><br>
+						<a target="_blank" href="https://aioi.neocities.org"><img src="reclaimtheweb.gif" title="Pixel by Aioi" alt="An animated pixel of Shaymin sky forme, themed after blue stars. Text reads 'Reclaim the Web!'" width="175px" style="margin-top:15px"></a>
+						<!-- FC2 Counter  Ends here -->
+												<!-- Temporarily removing at request of another part: <div id="boxtest">
+												<div id="links">
+													<a style="color: hotpink" href="/fen/" target="_parent">fen's den</a> <img alt="Fennekin sprite" src="pokemon/fennekin/fennekin sprite.png"><br>
+												</div></div>
+												<img alt="Beware of blog!" src="beware.gif" class="banner">
+												<details>
+												<summary><p style="color: white; font-family: ms gothic; font-size: 13px; margin:5px" align="center"><img alt="White arrow" src="rightarrow.gif"> What's this?</p></summary>
+												<p style="color: white; font-family: ms gothic; font-size: 13px; margin:5px" align="center">Subsites run exclusively by certain "parts".</p>
+											<p style="color: white; font-family: ms gothic; font-size: 13px; margin: 0" align="center">This section is a WIP.</p>
+						<img alt="Construction sign with a ferret digging" src="construction.gif" width="50px"> <img alt="Pikachu wearing a construction hat and placing down traffic cones" src="pikawip.gif" width="50px"> <img alt="Construction sign with a ferret digging" src="construction.gif" width="50px"></details> -->
+					</div>
+				<div class="child" align="center">
+				<p style="margin:5px"><img id="darkglow" alt="White dragon divider" class="motion" src="whitedragons.gif" width="170px"><img alt="White dragons divider" id="darkglow" src="whitedragons.png" class="reducedmotion" style="max-width:170px"></p>
+
+
+				<div class="scrobbled" id="listening">
+						<div id="listeningStatus">
+						  <div id="blob" style="background-color: rgb(255, 97, 97)"></div>
+						  <p id="trackStatus">Loading info...</p>
+						</div>
+						<div id="musicBox">
+						  <img src="jam.gif" class="motion"/><img src="jam.png" class="reducedmotion">
+						  <div id="trackInfo">
+							<h3 id="trackName">track...</h3>
+							<p id="artistName">artist...</p>
+						  </div>
+					</div>
+				</div>
+				<script src="playingsong.js"></script>
+
+				<p style="margin:5px"><img id="darkglow" alt="White dragon divider" class="motion" src="whitedragons.gif" width="170px"><img alt="White dragons divider" id="darkglow" src="whitedragons.png" class="reducedmotion" style="max-width:170px"></p>
+				</div></div>
+
+					<div class="child" align="center">
+
+						<div id="moodbar">
+							<div id="mood">&nbsp;&nbsp;mood&nbsp;&nbsp;</div>
+						</div>
+						
+						<div id="energybar">
+							<div id="energy">&nbsp;&nbsp;ENERGY&nbsp;&nbsp;</div>
+						</div>
+					
+						
+						
+						<p class="imood"><br>chimera feels<br>
+							<a href="https://www.imood.com/users/chimera" target="_top"><img src="https://moods.imood.com/display/uname-chimera/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of chimera at www.imood.com" border="0"></a><br>V<br> <img alt="Sleepy dog pixel having a drink" src="dogsip.gif">
+						</p> 
+					</div>	
+				</div>
+						
+					</div>
+						</div>
+					</div>
+
+                </aside>
+                
+            </div>
+        </div>
+		
+		
+		<div id="footer"></div>
+<script src="script.js"></script>
+
+<script src="html_loader.js"></script>
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/svg-arrow.css" />
+<script>
+	tippy('a[title]', {
+	  theme: 'custom',
+	  arrow: tippy.roundArrow,
+	  zIndex: 9999999999,
+	  maxWidth: 300,
+  
+	  content(reference) {
+		const title = reference.getAttribute('title');
+		reference.removeAttribute('title');
+		return title;
+	  },
+	  
+	}),
+	tippy('img[title]', {
+	  theme: 'custom',
+	  arrow: tippy.roundArrow,
+	  zIndex: 9999999999,
+	  maxWidth: 300,
+  
+	  content(reference) {
+		const title = reference.getAttribute('title');
+		reference.removeAttribute('title');
+		return title;
+	  },
+	  
+	}),
+	tippy('div[title]', {
+	  theme: 'custom',
+	  arrow: tippy.roundArrow,
+	  zIndex: 9999999999,
+	  maxWidth: 300,
+  
+	  content(reference) {
+		const title = reference.getAttribute('title');
+		reference.removeAttribute('title');
+		return title;
+	  },
+	  
+	});
+  </script>
+ </body>
+ </html>

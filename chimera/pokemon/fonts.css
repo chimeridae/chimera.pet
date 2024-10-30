@@ -1,0 +1,55 @@
+ @font-face {
+				  font-family: 'double homicide'
+				  src: url('../fonts/DoubleHomicide.ttf');
+			  }
+
+			 @font-face {
+			    font-family: 'grungeldana';
+			    src: url('../fonts/Grungeldana.ttf');
+		    }
+
+			@font-face {
+				font-family: 'SlapAndCrumbly';
+				src: url('../fonts/SlapAndCrumbly.ttf');
+			}
+  
+			@font-face {
+				font-family: 'statusplz';
+				src: url('../fonts/statusplz.ttf');
+			}
+  
+			@font-face {
+				font-family: 'mercy';
+				src: url('../fonts/MERCY.ttf');
+			}
+  
+			@font-face {
+				font-family: 'determination';
+				src: url('../fonts/DTM-Sans.ttf');
+			}
+  
+			@font-face {
+				font-family: 'mars';
+				src: url('../fonts/Mars_Needs_Cunnilingus.ttf');
+
+			}
+  
+			@font-face {
+				font-family: 'monster friend';
+				src: url('../fonts/MonsterFriendFore.otf');
+			}
+
+			  @font-face {
+				font-family: 'pix punk';
+				src: url('../fonts/pixpunk.ttf');
+			}
+			
+			  @font-face {
+				font-family: 'sd autopilot';
+				src: url('../fonts/sd_auto_pilot.ttf');
+			}
+			
+			  @font-face {
+				font-family: 'cakentruffles';
+				src: url('https://dl.dropbox.com/s/etvt9sk6o6fc27m/Cake%20n%20Truffles.ttf');
+			}

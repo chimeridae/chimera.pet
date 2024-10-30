@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{GALLERY_TITLE}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{GALLERY_INFO}" />
+
+        <link href="gallery.css{ANTI_CACHE}" rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+    </style>
+    <body>
+        <header>
+            <h1>{GALLERY_TITLE}</h1>
+            <p>{GALLERY_INFO}</p>
+            <p>There are currently: {COUNT_IMAGES} images within {COUNT_ALBUMS} albums! ☺︎</p>
+        </header>
+        <section>
+            <nav id="index">
+                <h2>Categories</h2>
+                <ul>
+                    {ALBUMS}
+                </ul>
+            </nav>
+        </section>
+        <footer>Made with <a href="https://melonking.net/melon?z=/free/software/gallery-maker" target="_blank">Melon's Gallery {MAKER_VERSION}</a> - Updated: {LAST_UPDATE}</footer>
+    </body>
+</html>

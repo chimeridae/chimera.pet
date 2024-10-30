@@ -1,0 +1,268 @@
+	<link href="pokemon.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../fonts.css" rel="stylesheet" type="text/css" media="all">
+	<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+<style>
+  body {
+  background: transparent;
+  overflow-y: auto;
+  }
+  
+* {
+box-sizing: initial;
+}
+
+label {
+font-size: smaller;
+font-family: inherit;
+}
+
+  img {
+  max-width:100%;
+  }
+ </style>
+ <h1 align="center"><img src="doggy.gif"> Welcome to the world of Pokemon!</h1>
+
+<p align="center"><img src="000.gif"></p>
+
+<p>this is my labor of love towards a series that i can proudly call home. pokemon is an extremely important part of my life, and i wouldn't be where i am today without it. i hope you enjoy reading my thoughts on the series. this will include lots of personal memories, general opinions, as well as what i personally would consider "obscure" pokemon information.</p>
+
+<p>my more personal information will be located on the left sidebar, and more factual information will be located on the right. some links may be crossed out for now, as they are planned additions for the future. i hope that's alright.</p>
+
+<p align="center">to return to this page, click the sprites on the top of either sidebar.</p>
+
+<p align="center"><img src="line4.gif"></p>
+
+<div class="row">
+<div class="column" style="flex:25%">
+
+<div class="soulsilver">
+<h3>changelog</h3>
+<hr>
+
+<ul>
+<li>4/10/24 - created soul silver hub</li>
+<li>4/5/24 - added a section for guidebooks</li>
+<li>3/19/24 - finished pokemon hub design along with many initial pages</li>
+</ul>
+
+
+<img class="pointer" src="pointer.gif">
+</div>
+
+<div class="heartgold">
+<h3>poll</h3>
+<hr>
+
+<!-- Poll begin -->
+
+<form method="post" action="https://poll.pollcode.com/87254171" target="_blank"><div style="padding:2px;width:175px;font-family:Nunito;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>Did you play the games BEFORE the physical/special split (pre-DPPt)?</strong></div><input type="radio" name="answer" value="1" id="answer872541711" style="float:left;" /><label for="answer872541711" style="float:left;width:150px;">yep!</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer872541712" style="float:left;" /><label for="answer872541712" style="float:left;width:150px;">no...</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/" target="_blank">free polls</a></div></div></form>
+
+<!-- Older polls option 
+<hr>
+<details>
+<summary><h3 style="font-size:smaller;color:white">older polls...</h3></summary>
+
+<p style="font-size:smaller"><a style="text-decoration:none" href="https://poll.pollcode.com/73558211" target="_blank">1. What's your favorite region?</a></li></p>
+-->
+    
+
+</details>
+
+<!-- Poll end -->
+
+<img class="pointer" src="pointer.gif">
+</div>
+</div>
+
+<div class="column" style="flex:75%">
+
+<div align="center">
+<script language="JavaScript">
+function random_imglink(){
+var random=new Array()
+//specify random images below. You can have as many as you wish
+random[1]="random/1.png"
+random[2]="random/2.png"
+random[3]="random/3.png"
+random[4]="random/4.png"
+random[5]="random/5.png"
+random[6]="random/6.png"
+random[7]="random/7.png"
+random[8]="random/8.png"
+
+var ry=Math.floor(Math.random()*random.length)
+if (ry==0)
+ry=1
+document.write('<img src="'+random[ry]+'" style="max-width:100%;border-radius:20px">')
+}
+random_imglink()
+//-->
+</script>
+<p align="center">All artworks are official and sourced from Bulbapedia.</p>
+</div>
+</div>
+<script>
+        // initiate variables
+        let track_name = document.querySelector(".songtitle");
+
+        let playpause_btn = document.querySelector(".playpause-track");
+        let next_btn = document.querySelector(".next-track");
+        let prev_btn = document.querySelector(".prev-track");
+
+        let seek_slider = document.querySelector(".seek_slider");
+        let curr_time = document.querySelector(".current-time");
+        let total_duration = document.querySelector(".total-duration");
+
+        let track_index = 0;
+        let isPlaying = false;
+        let updateTimer;
+        
+        // create new audio element
+        let curr_track = document.getElementById("music");
+        
+        //
+        // DEFINE YOUR SONGS HERE!!!!!
+        // MORE THAN FOUR SONGS CAN BE ADDED!!
+        // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+        // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+        let track_list = [
+            {
+                name:"Pokémon 2.B.A. Master (1999) - What Kind Of Pokémon Are You?",
+                path:"https://vgmsite.com/soundtracks/pokemon-2.b.a.-master/cfspsljake/04%20-%20What%20Kind%20Of%20Pok%C3%A9mon%20Are%20You.mp3"
+            },
+            {
+                name:"Explorers of Sky - On the Beach at Dusk",
+                path:"https://vgmsite.com/soundtracks/pokemon-mystery-dungeon-explorers-of-sky/mdducvujdb/004%20-%20On%20the%20Beach%20at%20Dusk.mp3"
+            },
+            {
+                name:"inabakumori - Denki Yohou feat. Hatsune Miku",
+                path:"https://files.catbox.moe/kw1mwl.mp3"
+            },
+            {
+                name:"HGSS (GB Sounds) - National Park",
+                path:"https://vgmsite.com/soundtracks/pokemon-heartgold-and-soulsilver-music-super-complete/tmcawywjzk/3-37.%20National%20Park.mp3"
+            },
+            {
+                name:"Rica Matsumoto - Mezase Pokémon Master",
+                path:"https://vgmsite.com/soundtracks/pokemon-best-collection/nczesrjb/01.%20mezase%20pokemon%20master.mp3"
+            },
+            {
+                name:"Explorers of Sky - Do Your Best, as Always!",
+                path:"https://vgmsite.com/soundtracks/pokemon-mystery-dungeon-explorers-of-sky/gxkpwakkga/079%20-%20Do%20Your%20Best%2C%20as%20Always%21.mp3"
+            },
+			{
+				name: "Pokemon Movie 3 - Pokemon Johto",
+				path: "https://files.catbox.moe/grkvpv.mp3"
+			},
+			{
+				name: "Black / White 2 - N's Theme",
+				path: "https://vgmsite.com/soundtracks/pokemon-black-and-white-2-super-music-collection/whunhidntz/99%20N_s%20Theme.mp3"
+			}
+        ];
+        //
+        //
+        //
+        //
+        //
+
+        function loadTrack(track_index) {
+            clearInterval(updateTimer);
+            resetValues();
+
+            // load a new track
+            curr_track.src = track_list[track_index].path;
+            curr_track.load();
+            
+            // update details of the track
+            track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+
+            // set an interval of 1000 milliseconds for updating the seek slider
+            updateTimer = setInterval(seekUpdate, 1000);
+            
+            // move to the next track if the current one finishes playing 
+            curr_track.addEventListener("ended", nextTrack);
+        }
+
+        // reset values
+        function resetValues() {
+            curr_time.textContent = "0:00";
+            total_duration.textContent = "0:00";
+            seek_slider.value = 0;
+        }
+
+        // checks if song is playing
+        function playpauseTrack() {
+            if (!isPlaying) playTrack();
+            else pauseTrack();
+        }
+
+        // plays track when play button is pressed
+        function playTrack() {
+            curr_track.play();
+            isPlaying = true;
+            
+            // replace icon with the pause icon
+            playpause_btn.innerHTML = '<button><i class="fas fa-pause"></i></button>';
+        }
+
+        // pauses track when pause button is pressed
+        function pauseTrack() {
+            curr_track.pause();
+            isPlaying = false;
+            
+            // replace icon with the play icon
+            playpause_btn.innerHTML = '<button><i class="fas fa-play"></i></button>';
+        }
+
+        // moves to the next track
+        function nextTrack() {
+            if (track_index < track_list.length - 1)
+                track_index += 1;
+            else track_index = 0;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        // moves to the previous track
+        function prevTrack() {
+            if (track_index > 0)
+                track_index -= 1;
+            else track_index = track_list.length;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        // seeker slider
+        function seekTo() {
+            seekto = curr_track.duration * (seek_slider.value / 100);
+            curr_track.currentTime = seekto;
+        }
+
+        function seekUpdate() {
+            let seekPosition = 0;
+            
+            // check if the current track duration is a legible number
+            if (!isNaN(curr_track.duration)) {
+                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+                seek_slider.value = seekPosition;
+                
+            // calculate the time left and the total duration
+            let currentMinutes = Math.floor(curr_track.currentTime / 60);
+            let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+            let durationMinutes = Math.floor(curr_track.duration / 60);
+            let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+                
+            // adding a zero to the single digit time values
+            if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+            if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+            if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+            if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+
+            curr_time.textContent = currentMinutes + ":" + currentSeconds;
+            total_duration.textContent = durationMinutes + ":" + durationSeconds;
+          }
+        }
+        
+        // load the first track in the tracklist
+        loadTrack(track_index);
+    </script>

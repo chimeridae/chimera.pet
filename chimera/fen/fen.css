@@ -1,0 +1,31 @@
+ :root {
+    --pink: #fa50a9;
+    --darkpink: #f01186;
+ }
+
+h1,h2,h3 {
+        color: var(--pink);
+        text-shadow: 0px 0px 5px magenta;
+    }
+
+body {
+    
+    background: black;
+    color: white;
+}
+
+main {
+    font:grungeldana!important;
+    background: inherit;
+    border: 1px solid var(--darkpink);
+}
+
+#container {
+    max-width:60%;
+    margin-top:100px;
+}
+
+footer {
+    background-image: url(bg.png)!important;
+    width:100%;
+}

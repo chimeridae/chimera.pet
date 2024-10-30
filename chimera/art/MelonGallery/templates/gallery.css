@@ -1,0 +1,171 @@
+/* Melon's Gallery Maker! - Mega Grid v0.2 */
+
+body {
+    background-color: #b1ebc5;
+    background-image: url('https://files.catbox.moe/6y3u15.gif');
+    font-family: Verdana;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+h1,h2 {
+    margin: 10px;
+  }
+
+ul {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'determination';
+    src: url('../../../fonts/DTM-Sans.ttf');
+}
+
+a,
+a:visited {
+    color: gold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    clear: both;
+}
+
+nav ul,
+nav li {
+    padding: 0px 15px;
+}
+
+footer {
+    clear: both;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-family: determination;
+}
+
+/* Gallery Pages */
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#photos a {
+    display: flex;
+    flex-flow: column;
+}
+
+#photos figure {
+    margin: 5px;
+    max-width: min-content;
+    border: 5px solid white;
+    outline: 1px solid black;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+
+#photos figure:hover {
+    transform: scale(1.2);
+}
+
+.photo-filename {
+    visibility: collapse;
+  }
+
+#photos img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    /* Enable this for pixel art!! */
+    image-rendering: pixelated;
+    background-image: url('../blackgrid.png');
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+
+#photos span,
+#photos figcaption {
+    font-size: 0.5em;
+    word-break: break-all;
+    max-width: 95%;
+}
+
+#photos span {
+    display: block;
+}
+
+#photos figcaption {
+    padding: 6px 0px;
+}
+
+.page-links ul {
+    padding: 5px 5px;
+    margin: 0px;
+    display: inline-block;
+}
+.page-links li {
+    list-style: none;
+    display: inline;
+    margin: 0px 1px;
+    padding: 0px;
+}
+
+/* Mobile Styling */
+
+@media (max-width: 800px) {
+    #photos img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #photos span,
+    #photos figcaption {
+        font-size: 0.8em;
+    }
+}
+
+/* Styling for JavaScript viewer (if enabled) */
+
+#js-viewer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 14, 3, 0.95);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#js-viewer img {
+    max-width: 95%;
+    max-height: 80%;
+    height: auto;
+    width: auto;
+}
+
+#js-viewer span {
+    margin-top: 10px;
+}
+
+#js-viewer span button {
+    border-radius: 0px;
+    border: 2px outset #cecece;
+    background-color: #e2e2e2;
+    cursor: pointer;
+}
+
+#js-viewer span button:hover {
+    border: 2px inset #cecece;
+    background-color: #b8b8b8;
+}

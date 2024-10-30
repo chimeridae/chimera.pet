@@ -1,0 +1,153 @@
+
+/* links container */
+
+#boxtest {
+	font-family:basiic;
+	width: 100%;
+	border: 1px solid black;
+	background:linear-gradient(to bottom, rgba(43,20,8,0) 0%,rgba(137,70,4,1) 100%),url('yellow.gif');
+	color: black;
+	text-align: left;
+	line-height:1.2;
+	padding: 4px;
+	box-shadow: 0px 2px 3px #0000005c;
+}
+
+/* links, animation */
+
+a {
+color: #f5dd42;
+text-decoration-style: dashed;
+}
+
+#links {
+	font-family: 'mars';
+	font-size: 18px;
+	text-shadow: -1px 1px 0 #000,
+		1px 1px 0 #000,
+		1px -1px 0 #000,
+	-1px -1px 0 #000;
+	text-align: left;
+}
+
+#links a:hover {
+	padding-left: 5%;
+	transition: padding-left ease 0.25s;				
+}
+
+h2 {
+	font-family: monster friend;
+	font-size: 20px;
+	color: white;
+	text-shadow: -2px 2px 0 #000,
+		1px 1px 0 #000,
+		1px -1px 0 #000,
+		-1px -1px 0 #000;
+}
+
+
+#rightSidebar, #leftSidebar {
+	padding:10px;
+	h2 {
+		font-size:15px;
+	}
+}
+
+body {
+	margin:0;
+}
+
+/* energy, mood bars */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+#moodbar {
+	height: 2em;
+	font-family: "mars", sans-serif;
+	width: 90%;
+z-index: 5000;
+	overflow: hidden;
+	margin: 10px;
+	text-align: left;
+	background-color: rgba(0,0,0,0.7);
+	border: 2px solid #fff;
+	border-radius: 11px;
+	font-weight: 400;
+	font-size: 15px;
+	box-shadow: 1px 1px 2px #333;
+}
+
+#mood{
+	text-shadow: -1px 1px 0 #000,
+			1px 1px 0 #000,
+			1px -1px 0 #000,
+			-1px -1px 0 #000;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9a1e83+0,d82ac7+50,ca20b6+51,e87edf+100 */
+background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+	display:inline-block;
+	height: 100%;
+	vertical-align: middle;
+	line-height: 200%;
+	color: #fff;
+	border-right: 1px solid #ffffff75;
+	box-shadow: 1px 1px 2px #333;
+	text-align:right;
+	width: var(--mood);
+}
+
+
+#energybar {
+	text-shadow: -1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;
+	height: 2em;
+	font-family: "mars", sans-serif;
+	width: 90%;
+z-index: 5000;
+	overflow: hidden;
+	margin: 10px;
+	text-align: left;
+	background-color: rgba(0,0,0,0.7);
+	border: 2px solid #fff;
+	border-radius: 11px;
+	font-weight: 400;
+	font-size: 15px;
+	box-shadow: 1px 1px 2px #333;
+}
+
+#energy{
+
+	background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+	display:inline-block;
+	height: 100%;
+	vertical-align: middle;
+	line-height: 200%;
+	color: #fff;
+	border-right: 1px solid #ffffff75;
+	box-shadow: 1px 1px 2px #333;
+	text-align:right;
+	width: var(--energy);
+}
+
+
+
+
+
+details summary::-webkit-details-marker {
+	display:none;
+}
+
+details > summary {
+	display:block
+}
+
+#darkglow {
+filter: drop-shadow(0 0 0.10rem rgb(0, 0, 0));
+}
+
+#glow {
+filter: drop-shadow(0 0 0.25rem rgb(225, 182, 72));
+}
+
+
+			
+			

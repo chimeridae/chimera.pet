@@ -1,0 +1,202 @@
+<head>
+<title>animal's den</title>
+<link rel="stylesheet" href="style.css">
+<link href="../fonts.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="../sidebar.css">
+	<!--This script should appear below your LINK stylesheet tags -->
+
+<script src="../styleswitch.js" type="text/javascript">
+
+/***********************************************
+* Style Sheet Switcher v1.1- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<script>
+
+	// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+	// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+	
+	//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+	//** Call: uniquevar.playclip() to play sound
+	
+	var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+	}
+	
+	function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+	for (var i=0; i<arguments.length; i++){
+	var sourceel=document.createElement('source')
+	sourceel.setAttribute('src', arguments[i])
+	if (arguments[i].match(/\.(\w+)$/i))
+	sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+	html5audio.appendChild(sourceel)
+	}
+	html5audio.load()
+	html5audio.playclip=function(){
+	html5audio.pause()
+	html5audio.currentTime=0
+	html5audio.play()
+	}
+	return html5audio
+	}
+	else{
+	return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+	}
+	
+	//Initialize two sound clips with 1 fallback file each:
+	
+	var mouseoversound=createsoundbite("hover.mp3")
+	</script>
+
+<script type='text/javascript' src='css-audio.js'></script>
+  <script type='text/javascript'>
+    window.addEventListener('load', function() { KTK.CSSA.init(); })
+  </script>
+
+<style>
+body {
+	color:white;
+	font-family:nunito;
+overflow: hidden;
+margin: 20px;
+margin-left:10px;
+}
+
+a {
+color: deeppink;
+text-decoration-style: dashed;
+}
+
+h2 {
+font-family: monster friend;
+font-size: 20px;
+}
+
+ol {
+padding-left: 10px;
+}
+
+#boxtest {
+width: 100%;
+border: 1px solid black;
+background: black;
+color: black;
+text-align: left;
+padding: 5px;
+}
+
+
+
+#links {
+	font-family: 'mars';
+	line-height: 1.2;
+	font-size: 18px;
+	text-shadow: -1px 1px 0 #000,
+	  1px 1px 0 #000,
+	 1px -1px 0 #000;
+	-1px -1px 0 #000;
+	text-align: left;
+}
+
+
+#glow {
+filter: drop-shadow(0 0 0.25rem rgb(225, 182, 72));
+}
+
+#darkglow {
+filter: drop-shadow(0 0 0.10rem rgb(0, 0, 0));
+}
+
+a {
+    --audio-src: url('click.mp3');  
+    }
+	a:active {
+	  --audio-state: playing;
+	}
+
+.deco {
+	filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+}
+
+</style>
+</head>
+
+<div align="center"><img id="glow" src="foolslick.gif">
+
+<h2 style="font-size: 15px;">the basics</h2></div>
+                        
+						<div id="boxtest">
+						<div id="links">
+							<img src="../q.gif"> <a href="about" target="_parent" onmouseover="mouseoversound.playclip()" ">Moar about me</a><br>
+							<img src="../whitethinking.gif"> <a href="journal" target="_parent" onmouseover="mouseoversound.playclip()" ">journal ^^</a><br>
+							<img src="../heartbox.gif"> <a href="sites" target="_parent" onmouseover="mouseoversound.playclip()" ">other cool sitez!</a><br> 
+							<img src="../rightarrow.gif"> <a " href="sitemap" target="_parent" onmouseover="mouseoversound.playclip()">sitemap</a>
+                        </div></div>
+                   <img src="foolsbanner1.png" width="172px">
+
+
+</p>
+
+<img id="darkglow" src="foolseevees.gif" width="170px">
+
+<h2 style="font-size: 15px; line-height: 1.4" align="center">media fanpages</h2>
+<div id="boxtest">
+<div id="links" style="color: white;">
+				<a href="pokemon" target="_parent" onmouseover="mouseoversound.playclip()" "><img src="../pokeball.gif"> pokemon!!! >:D</a> <img src="../new01.gif" width="45px"><br>
+				<a href="undertale" target="_parent" onmouseover="mouseoversound.playclip()" "><img src="../soul.png" width="10"> um idk? xD</a><br>
+				<a href="digimon" target="_parent" onmouseover="mouseoversound.playclip()" "><img src="../digiegg.gif" width="15"> digimon sux!</a></a><br>
+				<img src="../rightarrow.gif"> more tba!
+</div></div>
+<img src="foolsbanner2.png" width="172px">
+<div class="deco">					
+<p style="font-size: 10px;">
+	----///-\\\----Put this on your page if<br>
+	---|||---|||---You love wolves<br>
+	---|||---|||---want to stop wolf slaughter<br>
+	---|||---|||---and hunting<br>
+	----\\\-///----put this on your page<br>
+	-----\\///-----if you care<br>
+	------///\-----about<br>
+	-----///\\\----wolves<br>
+	----///--\\\--- -started by pearooheart
+</p>
+
+<p style="font-size:10px">
+	╔╦╦╦╗Post this<br>
+	╠╬╬╬╣Chocolate bar<br>
+	╠╬╬╬╣On your page<br>
+	╠╬╬╬╣if you are a fan of<br>
+	╚╩╩╩╝♥CHOCOLATE♥<br>
+	<br>
+╔╦╦<br>
+╠╬ =0 U ATE MY ♥CHOCOLATE♥<br>
+╠╬╬╬╣IM GONNA SUE U!!!!<br>
+╠╬╬╬╣<br>
+╚╩╩╩╝<br>
+</p>
+
+<p style="font-size:10px">
+
+	------♥♥------ Put This<br>
+	----♥♥-♥♥---- Ribbon<br>
+	---♥♥---♥♥--- On Your<br>
+	---♥♥---♥♥--- Page If<br>
+	---♥♥---♥♥--- Your<br>
+	----♥♥-♥♥---- Against<br>
+	-----♥♥♥------ Animal<br>
+	----♥♥-♥♥---- Abuse.<br>
+	---♥♥---♥♥--- Thank You. <br>
+
+</p>
+</div>
+</div>

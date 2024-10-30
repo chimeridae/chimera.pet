@@ -1,0 +1,38 @@
+#scroll {
+    margin: 10px;
+    color: black;
+    background-image: url('paper.jpg');
+    max-height: 300px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+    #scroll ul {
+    list-style-image: url('journal.gif');
+    }
+    
+    #scroll a {
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+}
+
+#leftSidebar {
+    width:200px;
+    height:100%;
+    overflow:hidden;
+    border-right:2px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#rightSidebar {
+    width:200px;
+    height:100%;
+    overflow:hidden;
+    border-left:2px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

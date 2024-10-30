@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>animal's den</title>
+	<link href="../../fonts.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../../chimera.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../comment-widget-dark.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <style>
+  body {
+  background: transparent;
+  overflow-y: auto;
+  }
+
+  .box {
+    padding:10px;
+  }
+  
+  img {
+  max-width: 300px;
+  border: 3px double black;
+  }
+  
+  .override {
+  max-width: 650px;
+  border: 3px double black;
+  }
+  
+  li {
+  padding: 5px;
+  }
+  </style>
+  
+
+<h1 align="center">3/29/23 | 2:19 AM</h1>
+<div class="box" style="margin: 10px">
+<strong>mood:</strong> :3
+<hr>
+<strong>listening to:</strong> rook&nomie - endless (and everything else in my winamp playlist)
+<hr>
+<strong>pokewalker steps:</strong> uh, i don't know, i haven't put my steps in for a few days so i have 900+ watts right now 0_0 i think i've taken close to 20,000 steps since I last transferred them
+</div>
+
+<p>Another late night entry! Actually, I specifically have never written an entry as far as I can remember lol, so this one may be a little different. I have a lot of things I want to put on our site, but I'm kind of shy and still figuring out how I want to present things... I've wanted to write something all day because it's been <i>very</i> eventful in life lately, but I got really distracted working on curating the Perfect Winamp Playlist (Ever, For Me). As you can imagine it's pretty hard to remember all of the music you like! Because I got a new laptop fairly recently, I don't have any of my mp3s and used this as an excuse to reinstall as much as I could remember. I have never once used Spotify before, and I don't ever plan to start doing it if I can help it... I have too many gripes with streaming to ever resort to a program like that. I never understood why seemingly everyone that I'd ever known started using a program/app/service/whatever that relies on you having an internet connection to listen to your music after mp3 players were already the norm in the early 2000's. I understand not wanting to use something physical like cassettes or CDs, but mp3s are so simple... and the idea that Spotify can just remove whatever music at any time and you could lose access to it has always rubbed me the wrong way.</p>
+
+<p>Anyway, I didn't mean to start ranting about Spotify, this is about Winamp (more specifically WACUP)! Though, I didn't actually intend to mess with Winamp today... it's kind of a roundabout story. I started by playing with Wallpaper Engine, which I just acquired yesterday at the recommendation of a friend (Hi Jordan!). Looking into Audio responsive wallpapers, Milkdrop immediately came to mind - and I was really happy to see that there are multiple wallpapers emulating Milkdrop! After spending way too long just being mesmerized by Milkdrop while looping the few mp3s I had installed, I thought it would be a good time to finally get the rest of my mp3s back. That's how I ended up wasting all the time I was going to use coding on downloading my Bandcamp and Soulseek files. You should totally check out Wallpaper Engine by the way, it's really neat! Here's a gif of my favorite desktop wallpaper I use with it so far:</p>
+
+<div align="Center"><img src="../photos/4/wallpaper demo.gif" class="override"></div>
+
+<p>So now we're back to the topic at hand... I only have about 276 songs on my playlist at the time of writing, and I feel like I'm forgetting an insanely large chunk of music, but it's a start. It's hard to think about Winamp without also thinking about it's plethora of user-made skins, and I went straight into figuring out how to install them. I'd only ever used Webamp before, but obviously HTML wasn't going to work here! I never actually used Winamp myself when I was younger, opting to instead stream all of my music manually through Windows Media Player. I wasn't really aware of any other media players besides the default one, lol. That's an insanely limiting option for me as an adult though, even if I do still love media player's nostalgic visualizers...</p>
+
+<p>The idea of creating an entire skin from scratch was daunting to me, so I headed over to the Winamp Skin Museum and found a few that I'd liked from there in the past for Webamp, or considered using in the future. There are two things that I think are important to know for the context with which I was heading into tackling this question... First is that there are two different types of skins: Classic (.wsz) skins for Winamp 2.X, which are the ones that Webamp uses (and the ones that most people think of when they think of Winamp) - and Modern (.wal) skins for Winamp 3+, which offer much more freedom in terms of customization and scripting, but are much more complicatedand have a lot more moving parts compared to Classic skins. The second thing I'd like to note is that I am using WACUP specifically, the WinAmp Community Update Project, which is a modern project that has a considerably larger amount of windows and features than classic Winamp, and has it's own structure with which it handles parts of it's skins. This left me in a conundrum where most skins that I'd had downloaded would only work on the standard Winamp windows without affecting the other windows, like this:</p>
+
+<div align="center"><img src="../photos/4/1.png" class="override"></div>
+
+<p>You see how all the windows to the right use the default skin instead of the one I chose? I knew enough to come to the conclusion that this presumably must be from using WACUP, but I didn't know enough about how Winamp skins are actually made to figure out if this was an issue of the program reading the skin incorrectly, or missing files, or something else entirely. So, the next step is to learn about how Winamp skins are constructed. Considering how easily people made Winamp skins back in it's time, and the specific ways that they were edited, I knew that it had to be something that anyone with an image editor could paste an image into (to some degree)... but, I didn't know about the difference between Classic and Modern skins yet. The only resources I could find for WACUP specifically were from it's forum, which focus heavily on editing and creating Modern skins and scripts. This is a great resource, but for someone who didn't know even the basics of skin editing, it was kind of like jumping into the deep end. Editing Modern skins involves a lot of factors, even including some coding. But I knew that if kids in the late 90's and early 2000's could edit a shitty Pikachu jpeg onto their Winamp skin for fun, it couldn't possibly be that complicated... this was getting annoying! Is it a super arduous process or not!? After shifting my eyes away from WACUP specifically and back onto Winamp broader, I finally learned about the delineation between these skin types and learned more about editing Classic skins, which thankfully *is* as easy as I'd imagined at the onset of this endeavor.</p>
+
+<p>Here's how Classic Winamp skins work: Each Winamp skin is made out of a collection of .bmp images (or .png in the case of WACUP since it supports it) comprising the borders, buttons, text, and other miscellaneous bits that make up the entirety of the program. Skins are made by extracting these files from the .wsz file using a program like Winrar, and editing these manually in an image editor of your choice. The problem that I was running to was that the windows to the right of the main Winamp ones use a file that is designated as "gen.png" in the modernized WACUP version of these skins, but is named differently in the classic early 2000 skins that I'd had downloaded. Fixing this was as easy as extracting the base skin and finding that file to use as a template, then finding the old textures for these windows in the old skins and transferring them to the new file template. After fiddling around with this for way too long in PDN, I managed to restore the windows for this Sneasel skin by Catty, and this is the result:</p>
+
+<div align="center"><img src="../photos/4/2.png" class="override"></div>
+
+<p>It's definitely not perfect, I don't thiiiink regular Classic Winamp changes the skin based on whether the windows are in focus or not, but WACUP includes textures for that and I customized these myself based on my liking. This seems to have made the borders kind of messy since I didn't quite understand the template, but I think it looks fine enough for casual use. It was a learning experience, and I'm glad to get it running at all. Now I can venture into maybe making something myself in the future if I ever get around to it. :) If you made it this far, I hope you enjoyed reading about my learning process, lol. Hopefully I'll remember to edit this entry in the future to include links to the resources I found helpful.</p>
+
+<p>Anyway, I had a lot to say about how life has been lately, but I took over an hour to write this and my new laptop bluescreened in the middle of writing it so I am done fucking around with computers for the day. Here are the things that I'm looking forward to, or happy about that have happened recently:
+
+<ul>
+	<li>My friend Alice got me a Digimon 20th Anniversary V-Pet from a thrift-ish store in our town for cheap, and it's Lucas and Fen's favorite colors! Plotmon is exclusive to this version of the device, which I'm happy about. I've got Agumon and Pagumon right now, and am aiming for MetalGreymon and either ExTyrannomon or Mugendramon.</li>
+	<li>This Friday we're going on a small weekend family trip to a town near me, and I'm really excited about it. We're going to go to an aquarium, and maybe a planetarium. Last time we went here a really nice trans girl complimented me and paid for my dinner, and I'm staying at the same hotel, so I hope we get to see her again. We're also going to get to go to Build-a-Bear, and Fen wanted to get a Sylveon to match a Glaceon one they got for their partner... After I called the store, they had only 1 Sylveon left and reserved it for me so that I can get it on Friday! :") I'll also bring Glaceon in to get renamed since she was bought secondhand, and add a scent disc in her paw.</li>
+	<li>Thursday I (hopefully) will get to hang out with both my irl friends, and we may even get to go to the zoo before it gets too far into the hot weather here! I'm really excited to take pictures and see if there's anything I missed the last time I went early this year. I really love nature and am excited I'll get to see so much of it this week after an insanely stressful month.</li>
+	<li>I got to talk to my sister for the first time since January, and got confirmation that she's doing well, which is a really big thing. I also got a way to keep in contact with her, and I'm hoping things will stabilize irt this from here</li>
+	<li>I found an inchworm today! He was cute and green! I also got to see a lot of dogs and even a cat which is rare for me nowadays, and I specifically looooooove cats it was a black cat with a really raspy hoarse meow</li>
+	<li>And of course, I got to hang out with my friends online a couple of times the past week and I'm always very thankful for every one of my friends (if you're reading this I love you!!!)</li>
+</ul>
+<p>Now to leave a note to self to hopefully upload some of the pictures I've taken the past little while into our scrapbook here. I have to work tomorrow so I shouldn't even be up this late, and I'm supposed to be the one in charge of that lol. Oops! Goodnight / morning / whatever!</p>
+
+<div id="c_widget"></div>
+<script src="../comment-widget.js"></script>
+ 

@@ -1,0 +1,150 @@
+<head>
+<title>animal's den</title>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="sidebar.css">
+<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+"mp3": "audio/mpeg",
+"mp4": "audio/mp4",
+"ogg": "audio/ogg",
+"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+var html5audio=document.createElement('audio')
+if (html5audio.canPlayType){ //check support for HTML5 audio
+for (var i=0; i<arguments.length; i++){
+var sourceel=document.createElement('source')
+sourceel.setAttribute('src', arguments[i])
+if (arguments[i].match(/\.(\w+)$/i))
+sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+html5audio.appendChild(sourceel)
+}
+html5audio.load()
+html5audio.playclip=function(){
+html5audio.pause()
+html5audio.currentTime=0
+html5audio.play()
+}
+return html5audio
+}
+else{
+return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("https://files.catbox.moe/urlyaj.wav")
+var clicksound=createsoundbite("https://files.catbox.moe/t8xzj9.wav")
+
+</script>
+
+</head>
+<style>
+
+</style>
+<div align="center">
+<a href="main.html" target="main">
+<script language="JavaScript">
+    function random_imglink(){
+    var myimages=new Array()
+        myimages[1]="sprites/ani_bw_037.gif"
+        myimages[2]="sprites/ani_bw_133.gif"
+        myimages[3]="sprites/ani_bw_134.gif"     
+        myimages[4]="sprites/ani_bw_135.gif"     
+        myimages[5]="sprites/ani_bw_136.gif"     
+        myimages[6]="sprites/ani_bw_149.gif"
+        myimages[7]="sprites/ani_bw_153.gif"
+        myimages[8]="sprites/ani_bw_162.gif"
+        myimages[9]="sprites/ani_bw_172.gif"
+        myimages[10]="sprites/ani_bw_180.gif"
+        myimages[11]="sprites/ani_bw_181.gif"
+        myimages[12]="sprites/ani_bw_190_f.gif"
+        myimages[13]="sprites/ani_bw_207_f.gif"
+        myimages[14]="sprites/ani_bw_215_m.gif"
+        myimages[15]="sprites/ani_bw_227.gif"
+        myimages[16]="sprites/ani_bw_235.gif"
+        myimages[17]="sprites/ani_bw_262.gif"
+        myimages[18]="sprites/ani_bw_286.gif"
+        myimages[19]="sprites/ani_bw_329.gif"
+        myimages[20]="sprites/ani_bw_330.gif"
+        myimages[21]="sprites/ani_bw_335.gif"
+        myimages[22]="sprites/ani_bw_359.gif"
+        myimages[23]="sprites/ani_bw_380.gif"
+        myimages[24]="sprites/ani_bw_418_f.gif"
+        myimages[25]="sprites/ani_bw_419_f.gif"
+        myimages[26]="sprites/ani_bw_431.gif"
+        myimages[27]="sprites/ani_bw_447.gif"
+        myimages[28]="sprites/ani_bw_461_f.gif"
+        myimages[29]="sprites/ani_bw_470.gif"
+        myimages[30]="sprites/ani_bw_471.gif"
+        myimages[31]="sprites/ani_bw_474.gif"
+        myimages[32]="sprites/ani_bw_492-sky.gif"
+        myimages[33]="sprites/ani_bw_496.gif"
+        myimages[34]="sprites/ani_bw_497.gif"
+        myimages[35]="sprites/ani_bw_502.gif"
+        myimages[36]="sprites/ani_bw_529.gif"
+        myimages[37]="sprites/ani_bw_566.gif"
+        myimages[38]="sprites/ani_bw_567.gif"
+        myimages[39]="sprites/ani_bw_570.gif"
+        myimages[40]="sprites/ani_bw_571.gif"
+        myimages[41]="sprites/ani_bw_620.gif"
+        myimages[42]="sprites/ani_bw_634.gif"
+        myimages[43]="sprites/ani_bw_643.gif"
+		
+var ry=Math.floor(Math.random()*myimages.length)
+      if (ry==0)
+      ry=1
+document.write('<img src="'+myimages[ry]+'" border=0; id="glow">')
+}
+    random_imglink()
+    //-->
+</script>
+</a>
+
+<h2>Guidebooks</h2>
+<div id="rightlinks">
+    <div id="right">
+        <a href="guidebooks.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">information</a>
+        <hr>
+        <details>
+            <summary><a onmouseover="mouseoversound.playclip()">directory</a></summary>
+
+            <a href="hgss1.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"">hgss - johto</a><br>
+            <a href="hgss2.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">hgss - kanto</a><br>
+            <a href="bw1.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">bw - main</a><br>
+            <a href="bw2.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">bw - pokedex</a><br>
+            <a href="sumo.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">sun & moon</a><br>
+            <a href="pokepark.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">pokepark 1</a><br>
+            <a href="pmd.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">Explorers of Sky</a><br>
+        </details>
+    </div>
+</div>
+
+<h2>Pokewalker info</h2>
+
+<div id="rightlinks">
+<div id="right">
+<s><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">general info</a><br>
+<a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">courses</a><br>
+<a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">items</a><br></s>
+<a href="accessories.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">accessories</a><br>
+<s><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">trivia</a></s><br>
+</div>
+</div>
+<img src="pokewalker.png" width="180px">
+
+
+
+
+</div>

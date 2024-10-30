@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>animal's den</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="../fonts.css" rel="stylesheet" type="text/css" media="all">
+	<link href="sitemap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../chimera.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="alternate stylesheet" type="text/css" media="screen" title="hyperdeath" href="../hyperdeath.css" />
+	<!--This script should appear below your LINK stylesheet tags -->
+
+<script src="styleswitch.js" type="text/javascript">
+
+/***********************************************
+* Style Sheet Switcher v1.1- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<script type='text/javascript' src='../css-audio.js'></script>
+  <script type='text/javascript'>
+    window.addEventListener('load', function() { KTK.CSSA.init(); })
+  </script>
+
+<style>
+
+a {
+    --audio-src: url('click.mp3');  
+    }
+	a:active {
+	  --audio-state: playing;
+	  --audio-hold-navigation: finished;
+	}
+
+
+</style>
+
+<script>
+
+	// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+	// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+	
+	//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+	//** Call: uniquevar.playclip() to play sound
+	
+	var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+	}
+	
+	function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+	for (var i=0; i<arguments.length; i++){
+	var sourceel=document.createElement('source')
+	sourceel.setAttribute('src', arguments[i])
+	if (arguments[i].match(/\.(\w+)$/i))
+	sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+	html5audio.appendChild(sourceel)
+	}
+	html5audio.load()
+	html5audio.playclip=function(){
+	html5audio.pause()
+	html5audio.currentTime=0
+	html5audio.play()
+	}
+	return html5audio
+	}
+	else{
+	return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+	}
+	
+	//Initialize two sound clips with 1 fallback file each:
+	
+	var mouseoversound=createsoundbite("hover.mp3")
+
+	
+	</script>
+
+  </head>
+  <body> 
+	<div id="header">
+		<a href="../home"><div class="titlefont" id="ticker"></div></a>
+	</div>   
+			
+	
+	<div id="navigation">
+	</div>
+
+
+<div id="container" class="window active">
+	<div class="title-bar" id="status">
+		<div class="status">
+			<div id="statuscafe" align="center">
+				<img src="../furretright.gif">
+					<div id="statuscafe-username"></div>
+					<img src="../007r.gif">
+					<div style="display:inline-block" id="statuscafe-content"></div><script src="status.js" defer></script>
+			</div>
+		</div>
+		<div class="title-bar-controls">
+			<button aria-label="Minimize"></button>
+			<button aria-label="Maximize" disabled></button>
+			<button aria-label="Close"></button>
+		</div>
+	</div>
+            <div id="flex">
+			
+
+                <main style="scrollbar-width: thin">
+
+				<h3 style="display:inline"><img src="../yap.gif"> General site pages:</h3> <i>"the basics"; not part-specific</i>
+			
+			<ul>
+				<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../">index</a></li>
+				<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../about/">about</a></li>
+				<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../journal/">journal</a></li>
+				<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../sites/">other sites</a></li>
+				<li><a><s>sitemap</s></a> <i>- you are here!</i></li>
+			</ul>
+			
+			<h3 style="display:inline"><img src="../fennec.gif"> fen's den:</h3><i>personal pages owned by fen</i>
+		<ul>
+			<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../fen/">index</a></li>
+		</ul>
+
+			<h3 style="display:inline"><img src="../pokeball2.gif"> media fanpages:</h3> <i>hubs dedicated to certain media i like</i>
+				<ul>
+					<li><img src="../pokeball.gif"> <a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/">pokemon:</a> <i>my largest "shrine"; most info below is housed here within iframes.</i>
+						<ul>
+							<li><strong>pages you'll find here:</strong></li>
+							<ul>
+								<li>my favorite...</li>
+								<ul>
+									<li><i><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()" href="https://chimera.pet/pokemon/?z=/pokemon/starters">starters</a></i></li>
+									<li><i><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()" href="https://chimera.pet/pokemon/?z=/pokemon/characters">characters</a></i></li>
+								</ul>
+							<li>personal articles</li>
+								<ul><li><i><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()" href="https://chimera.pet/pokemon/?z=/pokemon/means">what pokemon means to me</a></i></li></ul>
+							<li>pokewalker info:</li>
+								<ul><li><i><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()" href="https://chimera.pet/pokemon/?z=/pokemon/accessories">accessories</a></i></li></ul>
+							</ul>
+						<li><strong>guidebooks:</strong> <i>(these will take a while to load)</i></li>
+						<ul>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/hgss1.html">hgss - johto</li></a>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/hgss2.html">hgss - kanto</li></a>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/bw1.html">BW 1 - main</li></a>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/bw2.html">BW 1 - pokedex</li></a>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/sumo.html">sun & moon</li></a>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/pokepark.html">pokepark 1</li></a>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/pmd.html">explorers of sky</li></a>
+						</ul>
+						<li><strong>personal save files:</strong></li>
+							<ul>
+								<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/hgss/">soul silver</li></a></li>
+							</ul>
+						<li><strong>collections:</strong></li>
+						<ul><li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/fennekin">fennekin</a></li>
+						<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../pokemon/flareon">flareon</a></li></ul>
+						</ul></li></ul></ul>
+					<ul>
+					<li><img src="../soul.png" width="12px"> <a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../undertale/">undertale</a>
+					<ul>
+						<li><strong>fan works</strong></li>
+						<ul>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../undertale/video1.html">alphys and flowey animation</a></li>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../undertale/video2.html">flowey - hello world amv [old, unfinished]</a></li>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../undertale/photos.html">personal merch photography</a></li>
+						</ul>
+						<li><strong>articles:</strong> <img src="../construction.gif" width="20px"> tba</li>
+						<li><strong>shrines:</strong> <img src="../construction.gif" width="20px"> tba</li>
+					</ul>
+					<li><img src="../digiegg.gif" width="18px"> <a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/">digimon</a>
+					<ul>
+						<li><strong>articles</strong></li>
+						<ul>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/intro.html">where do you start when getting into digimon?</a></li>
+						<ul>
+							<li><img src="../construction.gif" width="20px"> path 1 tba</li>
+							<li><img src="../construction.gif" width="20px"> path 2 tba</li>
+							<li><img src="../construction.gif" width="20px"> path 3 tba</li>
+						</ul>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/history.html">my personal experience with the franchise</a></li>
+						</ul>
+						<li><strong>fan works</strong></li>
+						<ul>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/scans.html">doujinshi scans</a></li>
+								<ul>
+									<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/scans/ichijouji%20plus/0.html">ichijouji PLUS</a> by Takashi Hirono</li>
+									<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/scans/flower%20and%20worm/0.html">flower and worm</a> by Mikanzaemon [wip]</li>
+								</ul>
+							<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/amv.html">my AMVs</a></li>
+							<ul>
+								<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/biz.html">biz</a></li>
+								<li><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"href="../digimon/star.html">andy, you're a star</a></li>
+							</ul>
+						</ul>
+						<li><strong>shrines:</strong> <img src="../construction.gif" width="20px"> tba</li>
+					</ul>
+
+					</li>
+				</ul>
+			</ul>
+				
+				</main>
+            </div>
+        </div>
+		
+		
+<footer id="footer">
+</footer>
+<script src="sticky.js"></script>
+<script src="../html_loader.js"></script>
+ </body>
+ </html>

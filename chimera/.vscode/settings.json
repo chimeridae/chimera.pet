@@ -1,0 +1,18 @@
+{
+    "workbench.iconTheme": "vscode-stardew-icon-theme",
+    "background.useFront": false,
+    "background.style": {
+        "background-position": "100% 100%",
+        "background-size": "cover";
+        "opacity": 0.25,
+    },
+    "background.customImages": [
+        "https://file.garden/ZgSP2Yo9YF7Ec9o7/GGpnwQiaEAAYphS.jpg"
+    ],
+    "editor.fontFamily": "Monocraft",
+    "files.exclude": {
+        "**/*.gif": true,
+        "**/*.jpg": true,
+        "**/*.png": true
+    }
+}

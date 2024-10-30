@@ -1,0 +1,409 @@
+<head>
+<title>animal's den</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../fonts.css">
+
+<link rel="stylesheet" href="sidebar.css">
+	<!--This script should appear below your LINK stylesheet tags -->
+
+<script src="styleswitch.js" type="text/javascript">
+
+/***********************************************
+* Style Sheet Switcher v1.1- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script> <!-- add fontawesome stylesheet to the head!! --> 
+
+<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+"mp3": "audio/mpeg",
+"mp4": "audio/mp4",
+"ogg": "audio/ogg",
+"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+var html5audio=document.createElement('audio')
+if (html5audio.canPlayType){ //check support for HTML5 audio
+for (var i=0; i<arguments.length; i++){
+var sourceel=document.createElement('source')
+sourceel.setAttribute('src', arguments[i])
+if (arguments[i].match(/\.(\w+)$/i))
+sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+html5audio.appendChild(sourceel)
+}
+html5audio.load()
+html5audio.playclip=function(){
+html5audio.pause()
+html5audio.currentTime=0
+html5audio.play()
+}
+return html5audio
+}
+else{
+return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("https://files.catbox.moe/urlyaj.wav")
+var clicksound=createsoundbite("https://files.catbox.moe/t8xzj9.wav")
+
+</script>
+
+
+</head>
+<style>
+
+</style>
+
+<a href="main.html" target="main">
+<script language="JavaScript">
+    function random_imglink(){
+    var myimages=new Array()
+        myimages[1]="sprites/ani_bw_037.gif"
+        myimages[2]="sprites/ani_bw_133.gif"
+        myimages[3]="sprites/ani_bw_134.gif"     
+        myimages[4]="sprites/ani_bw_135.gif"     
+        myimages[5]="sprites/ani_bw_136.gif"     
+        myimages[6]="sprites/ani_bw_149.gif"
+        myimages[7]="sprites/ani_bw_153.gif"
+        myimages[8]="sprites/ani_bw_162.gif"
+        myimages[9]="sprites/ani_bw_172.gif"
+        myimages[10]="sprites/ani_bw_180.gif"
+        myimages[11]="sprites/ani_bw_181.gif"
+        myimages[12]="sprites/ani_bw_190_f.gif"
+        myimages[13]="sprites/ani_bw_207_f.gif"
+        myimages[14]="sprites/ani_bw_215_m.gif"
+        myimages[15]="sprites/ani_bw_227.gif"
+        myimages[16]="sprites/ani_bw_235.gif"
+        myimages[17]="sprites/ani_bw_262.gif"
+        myimages[18]="sprites/ani_bw_286.gif"
+        myimages[19]="sprites/ani_bw_329.gif"
+        myimages[20]="sprites/ani_bw_330.gif"
+        myimages[21]="sprites/ani_bw_335.gif"
+        myimages[22]="sprites/ani_bw_359.gif"
+        myimages[23]="sprites/ani_bw_380.gif"
+        myimages[24]="sprites/ani_bw_418_f.gif"
+        myimages[25]="sprites/ani_bw_419_f.gif"
+        myimages[26]="sprites/ani_bw_431.gif"
+        myimages[27]="sprites/ani_bw_447.gif"
+        myimages[28]="sprites/ani_bw_461_f.gif"
+        myimages[29]="sprites/ani_bw_470.gif"
+        myimages[30]="sprites/ani_bw_471.gif"
+        myimages[31]="sprites/ani_bw_474.gif"
+        myimages[32]="sprites/ani_bw_492-sky.gif"
+        myimages[33]="sprites/ani_bw_496.gif"
+        myimages[34]="sprites/ani_bw_497.gif"
+        myimages[35]="sprites/ani_bw_502.gif"
+        myimages[36]="sprites/ani_bw_529.gif"
+        myimages[37]="sprites/ani_bw_566.gif"
+        myimages[38]="sprites/ani_bw_567.gif"
+        myimages[39]="sprites/ani_bw_570.gif"
+        myimages[40]="sprites/ani_bw_571.gif"
+        myimages[41]="sprites/ani_bw_620.gif"
+        myimages[42]="sprites/ani_bw_634.gif"
+        myimages[43]="sprites/ani_bw_643.gif"
+		
+var ry=Math.floor(Math.random()*myimages.length)
+      if (ry==0)
+      ry=1
+document.write('<img src="'+myimages[ry]+'" border=0; id="glow">')
+}
+    random_imglink()
+    //-->
+</script>
+</a>
+<h2>My favorite...</h2>
+
+<div id="leftlinks">
+<div id="left">
+<s><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">pokemon</a><br>
+<a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">regions</a><br></s>
+<a href="starters.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">starters</a><br>
+<s><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">games</a></s><br>
+<a href="characters.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">characters</a>
+<br>
+</div>
+</div>
+<img src="viridianbanner.png" width="180px">
+
+<h2>Personal save files</h2>
+
+<div id="leftlinks">
+    <div id="left">
+
+        <a href="hgss.html" target="chimera" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">soul silver <img src="sprites/hgss/emotes/heart.gif"></a>
+
+    </div>
+</div>
+<img src="ilexbanner.png" width="180px">
+
+
+
+<h2 style="line-height:1em">Poke-memories</h2>
+<div id="leftlinks">
+<div id="left">
+<a href="means.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">what pokemon means to me</a>
+</div>
+</div>
+<img src="parkbanner.png" width="180px">
+
+
+<h2>Collections</h2>
+
+<div id="leftlinks">
+<div id="left">
+<a href="fennekin.html" target="_top" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">fennekin <img src="fennekin/fennekin model.gif" width="35px"></a><br>
+<a href="flareon.html" target="_top"  onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">flareon <img src="flareon/pixels/258.gif"></a>
+</div>
+</div>
+
+			
+					<div class="player">
+<div class="window" style="width:103%; margin-top:10px;color: black">
+  <div class="title-bar" style="background-image: url('https://files.catbox.moe/xkd1wi.gif'); background-size: 30px">
+    <div class="title-bar-text"  style="filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black); margin-right:46px"><sub><img class="titlebaricon" src="https://files.catbox.moe/tg55zp.png" alt="cd player icon"></sub> Pikachu's Jukebox</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="flex">
+
+    <div id="musicplayer">
+        <div class="songtitlewindow">
+            <div class="flex"><marquee scrollamount="4" class="songtitle"></marquee><div class="songtitlearrow"></div></div>
+        </div>
+
+ <div class="seeking">
+            <div class="current-time">00:00</div>
+
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+            <div class="total-duration">0:00</div>
+        </div>
+
+        <table class="controls">
+            <tr>
+                <td>
+                    <div class="prev-track" onclick="prevTrack()"><button><i class="fas fa-backward"></i></button></div>
+                </td>
+                <td>
+                    <div class="playpause-track" onclick="playpauseTrack()" ><button><i class="fas fa-play"></i></button></div>
+                </td>
+                <td>
+                    <div class="next-track" onclick="nextTrack()"><button><i class="fas fa-forward"></i></button></div>
+                </td>
+            </tr>
+        </table>
+        
+        <audio id="music" src=""></audio> 
+    </div>
+    </div>
+  </div>
+</div>
+    </div></div>
+
+<script>
+        // initiate variables
+        let track_name = document.querySelector(".songtitle");
+
+        let playpause_btn = document.querySelector(".playpause-track");
+        let next_btn = document.querySelector(".next-track");
+        let prev_btn = document.querySelector(".prev-track");
+
+        let seek_slider = document.querySelector(".seek_slider");
+        let curr_time = document.querySelector(".current-time");
+        let total_duration = document.querySelector(".total-duration");
+
+        let track_index = 0;
+        let isPlaying = false;
+        let updateTimer;
+        
+        // create new audio element
+        let curr_track = document.getElementById("music");
+        
+        //
+        // DEFINE YOUR SONGS HERE!!!!!
+        // MORE THAN FOUR SONGS CAN BE ADDED!!
+        // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+        // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+        let track_list = [
+            {
+                name:"Pokémon 2.B.A. Master (1999) - What Kind Of Pokémon Are You?",
+                path:"https://vgmsite.com/soundtracks/pokemon-2.b.a.-master/cfspsljake/04%20-%20What%20Kind%20Of%20Pok%C3%A9mon%20Are%20You.mp3"
+            },
+            {
+                name:"Explorers of Sky - On the Beach at Dusk",
+                path:"https://epsilon.vgmsite.com/soundtracks/pokemon-mystery-dungeon-explorers-of-sky/mdducvujdb/004%20-%20On%20the%20Beach%20at%20Dusk.mp3"
+            },
+            {
+                name:"inabakumori - Denki Yohou feat. Hatsune Miku",
+                path:"https://files.catbox.moe/kw1mwl.mp3"
+            },
+			{
+				name:"Scarlet & Violet: The Indigo Disk: Battle! Vs. BB Champion Kieran!",
+				path:"https://vgmtreasurechest.com/soundtracks/pok-mon-scarlet-and-violet-the-hidden-treasure-of-area-zero-part-2-the-indigo-disk-switch-gamerip-2023/fyruagezeq/27.%20Battle%21%20Vs.%20BB%20Champion%20Kieran%21.mp3"
+			},			
+            {
+                name:"HGSS (GB Sounds) - National Park",
+                path:"https://dl.vgmdownloads.com/soundtracks/pok-mon-heartgold-pok-mon-soulsilver-greatest-sounds-2009/mxxengjvjt/3-38.%20National%20Park%20%5BGB%20Sounds%5D.mp3"
+            },
+            {
+                name:"Pokemon Sun & Moon - Hau'oli City (Day)",
+                path:"https://vgmsite.com/soundtracks/pokemon-sun-moon-super-music-collection/jatrpenfjp/45%20Hau%27oli%20City%20%28Day%29.mp3"
+            },
+            {
+                name:"Explorers of Sky - Do Your Best, as Always!",
+                path:"https://epsilon.vgmsite.com/soundtracks/pokemon-mystery-dungeon-explorers-of-sky/gxkpwakkga/079%20-%20Do%20Your%20Best%2C%20as%20Always%21.mp3",
+            },
+			{
+				name: "Pokemon Movie 3 - Pokemon Johto",
+				path: "https://files.catbox.moe/grkvpv.mp3"
+			},
+			{
+				name: "Pokemon Sword & Shield - Slumbering Weald",
+				path: "https://vgmsite.com/soundtracks/pokemon-sword-shield-ost/yxfvgsruqk/09%20-%20Slumbering%20Weald.mp3"
+			},
+			{
+				name: "Black / White 2 - N's Theme",
+				path: "https://epsilon.vgmsite.com/soundtracks/pokemon-black-and-white-2-super-music-collection/invjabojrf/3-12.%20N%27s%20Theme.mp3",
+			},
+			{
+				name: "Black / White 2 - Battle! N",
+				path: "https://epsilon.vgmsite.com/soundtracks/pokemon-black-and-white-2-super-music-collection/eeyxcauavy/3-13.%20Battle%21%20%28N%29.mp3",
+			},
+			{
+				name: "After the Rain - 1 2 3",
+				path:
+				"https://files.catbox.moe/rtfkv0.mp3",
+			},
+			{
+				name: "Pokemon Sun & Moon - Gladion's Theme",
+				path:"https://vgmsite.com/soundtracks/pokemon-sun-moon-super-music-collection/jxazjnqogk/81%20Battle%21%20%28Gladion%29.mp3",
+			}
+        ];
+        //
+        //
+        //
+        //
+        //
+
+        function loadTrack(track_index) {
+            clearInterval(updateTimer);
+            resetValues();
+
+            // load a new track
+            curr_track.src = track_list[track_index].path;
+            curr_track.load();
+            
+            // update details of the track
+            track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+
+            // set an interval of 1000 milliseconds for updating the seek slider
+            updateTimer = setInterval(seekUpdate, 1000);
+            
+            // move to the next track if the current one finishes playing 
+            curr_track.addEventListener("ended", nextTrack);
+        }
+
+        // reset values
+        function resetValues() {
+            curr_time.textContent = "0:00";
+            total_duration.textContent = "0:00";
+            seek_slider.value = 0;
+        }
+
+        // checks if song is playing
+        function playpauseTrack() {
+            if (!isPlaying) playTrack();
+            else pauseTrack();
+        }
+
+        // plays track when play button is pressed
+        function playTrack() {
+            curr_track.play();
+            isPlaying = true;
+            
+            // replace icon with the pause icon
+            playpause_btn.innerHTML = '<button><i class="fas fa-pause"></i></button>';
+        }
+
+        // pauses track when pause button is pressed
+        function pauseTrack() {
+            curr_track.pause();
+            isPlaying = false;
+            
+            // replace icon with the play icon
+            playpause_btn.innerHTML = '<button><i class="fas fa-play"></i></button>';
+        }
+
+        // moves to the next track
+        function nextTrack() {
+            if (track_index < track_list.length - 1)
+                track_index += 1;
+            else track_index = 0;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        // moves to the previous track
+        function prevTrack() {
+            if (track_index > 0)
+                track_index -= 1;
+            else track_index = track_list.length;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        // seeker slider
+        function seekTo() {
+            seekto = curr_track.duration * (seek_slider.value / 100);
+            curr_track.currentTime = seekto;
+        }
+
+        function seekUpdate() {
+            let seekPosition = 0;
+            
+            // check if the current track duration is a legible number
+            if (!isNaN(curr_track.duration)) {
+                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+                seek_slider.value = seekPosition;
+                
+            // calculate the time left and the total duration
+            let currentMinutes = Math.floor(curr_track.currentTime / 60);
+            let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+            let durationMinutes = Math.floor(curr_track.duration / 60);
+            let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+                
+            // adding a zero to the single digit time values
+            if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+            if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+            if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+            if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+
+            curr_time.textContent = currentMinutes + ":" + currentSeconds;
+            total_duration.textContent = durationMinutes + ":" + durationSeconds;
+          }
+        }
+        
+        // load the first track in the tracklist
+        loadTrack(track_index);
+    </script>
+
+

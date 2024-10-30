@@ -1,0 +1,54 @@
+
+.site-box {
+    text-align: left;
+    background-image: url(https://chimera.nekoweb.org/wood.gif); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-repeat: repeat;
+    color: black;
+    font-size: 12px;
+    border-radius: 12px;
+    border: 5px solid transparent;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 32;
+    border-image-source: url("//nekoweb.org/site/chimera/files/pmdtextbox.png");
+    border-image-width: 3;
+}
+
+.site-box > a > p {
+    margin-left:15px;
+    font-family: verdana;
+    filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);
+    color: gold;
+    font-weight: bold;
+}
+.site-box > a > span {
+    margin-left:15px;
+    font-family: verdana;
+    color:black;
+    top:-2px;
+}
+.site-box .sitefeature {
+    border: 1px solid black;
+    filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
+}
+
+.site-box .follow {
+    content: url('https://chimera.nekoweb.org/dragon.gif');
+    float:right;
+    right: 12px;
+    bottom: 2px;
+    filter: initial;
+}
+
+.site-box::after {
+    content: url('https://chimera.nekoweb.org/chimera.png');
+    position:absolute;
+    top: 8px;
+  right: -32px;
+  transition: transform 1.5s;
+}
+
+.site-box:hover::after {
+    	transform: translate(10px,0px) rotate(10deg);
+}
+}

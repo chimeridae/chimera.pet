@@ -1,0 +1,145 @@
+	<link href="pokemon.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../fonts.css" rel="stylesheet" type="text/css" media="all">
+	<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+<style>
+  body {
+  background: transparent;
+  overflow-y: auto;
+  }
+  img {
+  max-width:100%;
+  }
+  
+  td {
+  background-image: url('boxbg.png');
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px solid black;
+  }
+  
+  th {
+  max-width: 200px;
+  font-size: initial;
+  font-weight: initial;
+  font-family: Nunito;
+  }
+  
+  table {
+  border-spacing: 10px;
+  }
+  
+  td img {
+  filter: drop-shadow(0 0 0.15rem rgb(0, 0, 0));
+  }
+
+  @media only screen and (max-width: 800px) {
+	td {
+		display: flex;
+		align-items:center;
+		margin:1%;
+	}
+
+	td img {
+  width: 50%;
+  height: fit-content;
+}
+
+	.favorite {
+		width:100%;
+	}
+
+	tr {
+		display:flex;
+	}
+
+	.regions {
+		justify-content: space-around;
+	}
+  }
+
+ </style>
+
+<h1 align="center">Favorite starters of each region</h1>
+
+<table align="center">
+
+<tbody>
+	<tr class="regions">
+	
+	
+	<th><h3 style="display:inline" align="center">Kanto</h3></th>
+	
+	
+	<th><h3 style="display:inline" align="center">Johto</h3></th>
+	
+	
+	<th><h3 style="display:inline" align="center">Hoenn<a title="i just can't choose one!">*</a></h3></th>
+	</tr>
+	
+	<tr>
+	<td><img src="sprites/ani_bw_001.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_004.gif">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_007.gif"></td>
+
+<td><img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_152.gif">
+<img src="sprites/ani_bw_155.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_158.gif"></td>
+
+<td align="center"><img src="sprites/ani_bw_252.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5"src="sprites/ani_bw_255.gif">
+<img src="sprites/ani_bw_258.gif" class="favorite"></td>
+	</tr>
+	
+	<tr class="regions">
+	<th><h3 style="display:inline" align="center">Sinnoh</h3></th>
+	<th><h3 style="display:inline" align="center">Unova</h3></th>
+	<th><h3 style="display:inline" align="center">Kalos</h3></th>
+	</tr>
+	
+	<tr>
+	<td align="center"><img src="sprites/ani_bw_387.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_390.gif">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_393.gif"></td>
+
+	<td><img src="sprites/ani_bw_495.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_498.gif">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/ani_bw_501.gif"></td>
+
+	<td><img style="filter:grayscale(100%); opacity: 0.5" src="sprites/chespin.gif">
+<img src="sprites/fennekin.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/froakie.gif"></td>
+	</tr>
+	
+	<tr class="regions">
+	<th><h3 style="display:inline" align="center">Alola</h3></th>
+	<th><h3 style="display:inline" align="center">Galar</h3></th>
+	<th><h3 style="display:inline" align="center">Paldea</h3></th>
+	</tr>
+	
+	<tr>
+	<td><img src="sprites/rowlet.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/litten.gif">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/popplio.gif"></td>
+
+	<td><img style="filter:grayscale(100%); opacity: 0.5" src="sprites/grookey.gif">
+<img src="sprites/scorbunny.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/sobble.gif"></td>
+
+	<td><img src="sprites/906.gif" class="favorite">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/909.gif">
+<img style="filter:grayscale(100%); opacity: 0.5" src="sprites/912.gif"></td>
+	</tr>
+	
+</tbody>
+</table>
+
+<details>
+<summary><h1 style="margin-bottom:0"align="center">My Top 3 are...</h1><p style="margin:0" align="center"> click to reveal!</p></summary>
+
+<p align="center">
+<img style="width: 200px; filter: drop-shadow(0px 3px gold) drop-shadow(0 -3px gold) drop-shadow(3px 0 gold) drop-shadow(-3px 0 gold);" src="cynda.png">
+<img style="width: 150px; filter: drop-shadow(0px 3px silver) drop-shadow(0 -3px silver) drop-shadow(3px 0 silver) drop-shadow(-3px 0 silver);" src="fennekin.png">
+<img style="width: 150px; filter: drop-shadow(0px 3px darkgoldenrod) drop-shadow(0 -3px darkgoldenrod) drop-shadow(3px 0 darkgoldenrod) drop-shadow(-3px 0 darkgoldenrod);" src="sprig.png"> </p>
+<p align="center">Cyndaquil, Fennekin, and Sprigatito!</p>
+</details>

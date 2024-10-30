@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animal's den</title>
+	<link href="../fonts.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../chimera.css" rel="stylesheet" type="text/css" media="all">
+	<link href="pokemon.css" rel="stylesheet" type="text/css" media="all">
+	<link href="sidebar.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://melonking.net/scripts/frame-link.js"></script>
+    <script>
+        updateTitle = false;
+    </script>
+	<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+	
+
+	<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+"mp3": "audio/mpeg",
+"mp4": "audio/mp4",
+"ogg": "audio/ogg",
+"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+var html5audio=document.createElement('audio')
+if (html5audio.canPlayType){ //check support for HTML5 audio
+for (var i=0; i<arguments.length; i++){
+var sourceel=document.createElement('source')
+sourceel.setAttribute('src', arguments[i])
+if (arguments[i].match(/\.(\w+)$/i))
+sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+html5audio.appendChild(sourceel)
+}
+html5audio.load()
+html5audio.playclip=function(){
+html5audio.pause()
+html5audio.currentTime=0
+html5audio.play()
+}
+return html5audio
+}
+else{
+return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("https://files.catbox.moe/urlyaj.wav")
+var navmouseover=createsoundbite("https://files.catbox.moe/epn4xm.wav")
+var clicksound=createsoundbite("https://files.catbox.moe/t8xzj9.wav")
+
+</script>
+<style>
+    .child {
+        margin:0px;
+        width:100%;
+    }
+</style>
+  </head> 
+ <body> 
+
+	<div id="header">
+		<a href="../home"><div class="titlefont" id="ticker"></div></a>
+	</div>   
+			
+	
+	<div id="navigation">
+	</div>
+			
+  
+
+<div id="container" class="window active">
+	<div class="title-bar" id="status">
+
+        <div id="sprite" align="center">			
+            <img src="sprites/hgss/N.png"> 
+            <a href="https://www.deviantart.com/larryturbo/art/Gen-7-Alola-Overworld-Sprites-805455576" target="_blank"><img src="sprites/hgss/01.png"></a>  
+            <img src="sprites/hgss/2.png"> 
+            <img src="sprites/hgss/3.png"> 
+            <img src="sprites/hgss/4.png"> 
+            <img src="sprites/hgss/5.png"> 
+            <img src="sprites/hgss/6.png"> 
+            <img src="sprites/hgss/7.png"> 
+            <img src="sprites/hgss/10.png"> 
+            <img src="sprites/hgss/11.png"> 
+            <a href="https://www.deviantart.com/princess-phoenix/art/SHINY-Gen-6-Kalos-Pokemon-Overworld-Sprites-547999393" target="_blank"><img src="sprites/hgss/12.png"></a> 
+            <img src="sprites/hgss/13.png"> 
+            <a href="https://www.deviantart.com/darkusshadow/art/WIP-Gen-9-Paldea-Pokemon-Overworld-Sprites-967776690" target="_blank"><img src="sprites/hgss/18.png"></a> 
+            <a href="https://www.deviantart.com/larryturbo/art/Gen-7-Alola-Overworld-Sprites-805455576" target="_blank"><img src="sprites/hgss/14.png"></a> 
+            <a href="https://www.deviantart.com/myumorph/art/Unova-Overworlds-202087004" target="_blank"><img src="sprites/hgss/15.png"></a> 
+            <img src="sprites/hgss/16.png"> 
+            <img src="sprites/hgss/17.png"> 
+            <img src="sprites/hgss/19.png"> 
+            </div>
+             
+
+		<div class="title-bar-controls">
+			<button aria-label="Minimize"></button>
+			<button aria-label="Maximize" disabled></button>
+			<button aria-label="Close"></button>
+		</div>
+	</div>
+ 
+            <div id="flex">
+ <aside id="leftSidebar">
+
+
+<a href="main.html" target="main">
+    <img src="bwcirrus.gif" id="glow">
+</a>
+
+<div class="childrow">
+<div class="child">
+<h2>My favorite...</h2>
+
+<div id="leftlinks">
+<div id="left">
+<s><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">pokemon</a><br>
+<a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">regions</a><br></s>
+<a href="starters.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">starters</a><br>
+<s><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">games</a></s><br>
+<a href="characters.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">characters</a>
+<div id="banner" class="viridian">
+</div>
+</div>
+</div></div>
+
+<div class="child">
+<h2>Personal save files</h2>
+
+<div id="leftlinks">
+    <div id="left">
+
+        <a href="hgss/" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">soul silver <img src="sprites/hgss/emotes/heart.gif"></a>
+        <div id="banner" class="ilex">
+    </div>
+</div>
+</div>
+</div></div>
+
+<div class="childrow">
+<div class="child">
+
+<h2 style="line-height:1em">Articles</h2>
+<div id="leftlinks">
+<div id="left">
+<a href="means.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">what pokemon means to me</a>
+<hr>
+<a href="SVerror.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">S/V OT error nonsense</a>
+<div id="banner" class="park"></div>
+</div>
+</div>
+</div>
+
+
+<div class="child">
+
+<h2>Collections</h2>
+
+<div id="leftlinks">
+<div id="left">
+<a href="fennekin.html" target="_top" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">fennekin <img src="fennekin/fennekin model.gif" width="35px"></a><br>
+<a href="flareon.html" target="_top"  onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">flareon <img src="flareon/pixels/258.gif"></a>
+</div>
+</div>
+</div></div>
+
+			
+</aside>
+
+<!-- Main content -->
+
+<main style="height:1000px; overflow-y: hidden">
+<iframe scrolling="yes" style="border: none; height: 970px; width: 100%; overflow-y: auto" src="main.html" name="main" id="mainframe"></iframe> 
+</main>
+
+
+
+<!-- Right sidebar -->
+
+<aside id="rightSidebar">
+
+  <a href="main.html" target="main">
+   <img src="bwcritter.gif" id="glow">
+    </a>
+<div class="childrow">
+<div class="child">
+    <h2>Guidebooks</h2>
+    <div id="rightlinks">
+        <div id="right">
+            <a href="guidebooks.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">information</a>
+            <hr>
+            <details>
+                <summary><a onmouseover="mouseoversound.playclip()">directory</a></summary>
+                <a href="hgss1.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"">hgss - johto</a><br>
+                <a href="hgss2.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">hgss - kanto</a><br>
+                <a href="bw1.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">bw - main</a><br>
+                <a href="bw2.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">bw - pokedex</a><br>
+                <a href="sumo.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">sun & moon</a><br>
+                <a href="pokepark.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">pokepark 1</a><br>
+                <a href="pmd.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">Explorers of Sky</a><br>
+            </details>
+            <div id="banner" class="hgss"></div>
+        </div>
+    </div>
+</div>
+
+<div class="child">
+    <h2>Assets and resources</h2>
+    <div id="rightlinks">
+        <div id="right">
+            <details>
+                <summary><a onmouseover="mouseoversound.playclip()">directory</a></summary>
+                <a href="borders.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"">image borders</a><br>
+            </details>
+            <div id="banner" class="dragonite"></div>
+        </div>
+    </div>
+</div>
+
+<div class="child">
+    <h2>Pokewalker info</h2>
+    
+    <div id="rightlinks">
+    <div id="right">
+    <s><a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">general info</a><br>
+    <a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">courses</a><br>
+    <a onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">items</a><br></s>
+    <a href="accessories.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">accessories</a><br>
+    <a href="trivia.html" target="main" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">trivia</a>
+    <div id="banner" class="pokewalker"></div>
+    </div>
+    </div>
+</div>   
+</div>
+</aside>
+
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer id="footer">
+<iframe style="border: none; height: 80px; width: 100%; overflow: hidden" src="../footer.html" name="footer"></iframe>
+</footer>
+<script src="../html_loader.js"></script>
+ </body>
+<script src="sticky.js"></script>
+ </html>
